@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+
+        <title>404 Not Found</title>
+
+        <style nonce="B2/EsoyphBihk5oRyz8b1A">html{height:100%;margin:0;padding:0;border:0;font-size:100%;background:transparent}body{margin:0;padding:0;border:0;font:12px Roboto,arial,sans-serif;background:#f1f1f1;height:100%}#error-page{text-align:center;height:100%;white-space:nowrap;word-break:normal}#error-page-content{vertical-align:middle;display:inline-block}#error-page-hh-illustration{margin-bottom:10px}#error-page-vertical-align{height:100%;display:inline-block;vertical-align:middle}p{width:500px;margin:auto;color:#333;font-size:16px;white-space:normal;text-shadow:0 0 0 transparent,0 1px 1px #fff}a{color:#167ac6;cursor:pointer;text-decoration:none}</style>
+
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+
+        <div id="error-page">
+
+            <div id="error-page-content">
+
+                <img src="assets/img/stanly.gif" alt="">
+
+                <h1> 404 Not Found ! </h1>
+
+                <p>This page isn't available. Sorry about that.</p>
+
+                <br>
+
+                <p>You can purchase our <a href="#"  rel="popover" data-img="assets/img/patch.png" title="264th COMM patch" ><bold style="color: rgb(155, 5, 5); cursor: pointer;">Patch !</bold></a></p>
+
+            </div>
+
+            <span id="error-page-vertical-align"></span>
+
+        </div>
+
+    </body>
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Third party plugin JS-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script>
+
+$('a[rel=popover]').popover({
+
+  html: true,
+
+  trigger: 'hover',
+
+  placement: 'top',
+
+  content: function(){return '<img src="'+$(this).data('img') + '" />';}
+
+});
+
+</script> 
