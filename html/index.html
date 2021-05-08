@@ -1,549 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>COMM - Morale Network</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">AB101</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Plex</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-                    </li>
-                    <button style="border-radius: 25% 10%;" type="button" class="btn btn-danger" data-toggle="modal"
-                        data-target="#modalPoll-1">Feedback</button>
-                </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>COMM - Morale Network</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">AB101</a>
+                <button
+                    class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#projects">Plex</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                        </li>
+                        <button
+                            style="border-radius: 25% 10%;"
+                            type="button"
+                            class="btn btn-danger"
+                            data-toggle="modal"
+                            data-target="#modalPoll-1"
+                        >Feedback</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div
+            class="modal fade right"
+            id="modalPoll-1"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+            data-backdrop="false"
+        >
+            <div class="modal-dialog modal-full-height modal-right modal-notify modal-info modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="heading lead">Feedback request</p>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true" class="white-text">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i>
+                            <p>
+                                <strong>Your opinion matters</strong>
+                            </p>
+                            <p>
+                                Help us improve our WIFI?
+                                <strong>Give us your feedback.</strong>
+                            </p>
+                        </div>
+                        <hr>
+                        <p class="text-center">
+                            <strong>Your rating</strong>
+                        </p>
+                        <div class="form-check mb-4">
+                            <input
+                                class="form-check-input"
+                                name="group1"
+                                type="radio"
+                                id="radio-129"
+                                value="option1"
+                                checked
+                            >
+                            <label class="form-check-label" for="radio-129">Very good</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input
+                                class="form-check-input"
+                                name="group1"
+                                type="radio"
+                                id="radio-229"
+                                value="option2"
+                            >
+                            <label class="form-check-label" for="radio-229">Good</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input
+                                class="form-check-input"
+                                name="group1"
+                                type="radio"
+                                id="radio-329"
+                                value="option3"
+                            >
+                            <label class="form-check-label" for="radio-329">Mediocre</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input
+                                class="form-check-input"
+                                name="group1"
+                                type="radio"
+                                id="radio-429"
+                                value="option4"
+                            >
+                            <label class="form-check-label" for="radio-429">Bad</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input
+                                class="form-check-input"
+                                name="group1"
+                                type="radio"
+                                id="radio-529"
+                                value="option5"
+                            >
+                            <label class="form-check-label" for="radio-529">Very bad</label>
+                        </div>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <p class="text-center">
+                                    <strong>Email; If you wish to be contacted</strong>
+                                </p>
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <p class="text-center">
+                                    <strong>Describe your issue</strong>
+                                </p>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <p class="text-center">
+                                    <strong>Screenshots</strong>
+                                </p>
+                                <p>
+                                    We recommend using a WIFI analyzer app to take screen shot of 2.4ghz/5ghz surrounging to
+                                help us narraow down the issue
+                                </p>
+                                <input type="file" class="form-control-file">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" class="btn btn-danger waves-effect waves-light">
+                            Send
+                            <i class="fa fa-paper-plane ml-1"></i>
+                        </a>
+                        <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Cancel</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true" data-backdrop="false">
-        <div class="modal-dialog modal-full-height modal-right modal-notify modal-info modal-dialog modal-dialog-scrollable"
-            role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="heading lead">Feedback request</p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="white-text">×</span>
-                    </button>
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">welcome</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Morale network guidance and agreement</h2>
+                    <a class="btn btn-danger js-scroll-trigger" href="#about">Get Started</a>
                 </div>
-                <div class="modal-body">
-                    <div class="text-center">
-                        <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i>
-                        <p>
-                            <strong>Your opinion matters</strong>
-                        </p>
-                        <p>Help us improve our WIFI?
-                            <strong>Give us your feedback.</strong>
-                        </p>
+            </div>
+        </header>
+        <section class="about-section text-center" id="about" style="padding-bottom: 10rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">Morale-Net Services</h2>
+                        <p class="text-white-50">
+                            Unlimited base-wide WI-FI with
+                            <b class="text-primary">5mbps</b>
+                            download and upload. Movies & TV shows provided on PLEX server.
+                        </br>
+                        <b class="text-primary">Special Events; Baby births, funerals and remote proctored tests</b>
+                    </br>
+                    Following Activities are prohibited for a better experience.
+                </p>
+                <div class="btn-group">
+                    <button
+                        type="button"
+                        class="btn btn-danger dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >Prohibited</button>
+                    <div class="dropdown-menu">
+                        <!-- <a class="dropdown-item popoverData btn" href="#!"
+                                data-content="Transferring sensitive data such as banking and PII" rel="popover"
+                                data-placement="right" data-original-title="Except" data-trigger="hover">VPN</a> -->
+                        <!-- <a class="dropdown-item btn popoverData " href="#!"
+                                data-content="HBO Go, Hulu, Amazon Prime, Netflix, Live Sports Events" rel="popover"
+                                data-placement="right" data-original-title="Including but not limited to"
+                                data-trigger="hover">Subscription-based Streaming services</a> -->
+                        <!-- <a class="dropdown-item btn popoverData " href="#!"
+                                data-content="Twitch, Facebook.gg, Tiktok, Youtube, DailyMotion" rel="popover"
+                                data-placement="right" data-original-title="Except eudcational purposes"
+                                data-trigger="hover">Video Streaming services</a> -->
+                        <!-- <a class="dropdown-item popoverData btn" href="#!"
+                                data-content="PS, Nintendo, Xbox, Steam, etc." rel="popover" data-placement="right"
+                                data-original-title="Including but not limited to" data-trigger="hover">Online
+                                Gaming</a> -->
+                        <a
+                            class="dropdown-item popoverData btn"
+                            href="#!"
+                            data-content="Personal Device updates >1GB, Download large files >10GB to be approved on a per request basis"
+                            rel="popover"
+                            data-placement="right"
+                            data-original-title="Quota"
+                            data-trigger="hover"
+                        >Large Downloads</a>
+                        <a
+                            class="dropdown-item popoverData btn"
+                            href="#!"
+                            data-content="Plugging any device directly into any 768 EABS COMM equipment, Removing cables from established equipment to plug in personal devices"
+                            rel="popover"
+                            data-placement="right"
+                            data-original-title="Malicious Actions"
+                            data-trigger="hover"
+                        >Rougue Devices</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">Blackmarket sites</a>
+                        <a class="dropdown-item" href="#!">Torrent</a>
+                        <a class="dropdown-item" href="#!">Actions Deemed Illegal</a>
                     </div>
-                    <hr>
-                    <p class="text-center">
-                        <strong>Your rating</strong>
+                </div>
+            </div>
+        </div>
+        <img class="img-fluid" src="assets/img/wifi.png" alt="">
+    </div>
+</section>
+<section class="projects-section bg-light" id="projects">
+    <div class="container">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7">
+                <img class="img-fluid mb-3 mb-lg-0" src="assets/img/plex.png" alt="plex">
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Plex</h4>
+                    <p class="text-black-50 mb-0">
+                        Plex server is locally hosted library with movies and TV shows.
+                            Following exaplains how to log into the Plex.
                     </p>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" name="group1" type="radio" id="radio-129" value="option1"
-                            checked>
-                        <label class="form-check-label" for="radio-129">Very good</label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" name="group1" type="radio" id="radio-229" value="option2">
-                        <label class="form-check-label" for="radio-229">Good</label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" name="group1" type="radio" id="radio-329" value="option3">
-                        <label class="form-check-label" for="radio-329">Mediocre</label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" name="group1" type="radio" id="radio-429" value="option4">
-                        <label class="form-check-label" for="radio-429">Bad</label>
-                    </div>
-                    <div class="form-check mb-4">
-                        <input class="form-check-input" name="group1" type="radio" id="radio-529" value="option5">
-                        <label class="form-check-label" for="radio-529">Very bad</label>
-                    </div>
-                    <hr>
-                    <form>
-                        <div class="form-group">
-                            <p class="text-center">
-                                <strong>Email; If you wish to be contacted</strong>
-                            </p>
-                            <input type="email" class="form-control" placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <p class="text-center">
-                                <strong>Describe your issue</strong>
-                            </p>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <p class="text-center">
-                                <strong>Screenshots</strong>
-                            </p>
-                            <p>We recommend using a WIFI analyzer app to take screen shot of 2.4ghz/5ghz surrounging to
-                                help us narraow down the issue</p>
-                            <input type="file" class="form-control-file">
-                        </div>
-                    </form>
+                    <ol class="text-black-50 mb-0">
+                        <li>Open any browser, type www.plex.tv in the addres bar</li>
+                        <li>
+                            login in with Username
+                            <i class="text-primary">ab101.user</i>
+                            and password will be given by
+                            <i class="text-primary">COMM</i>
+                        </li>
+                        <li>Click the more tab, it will view SUPLEX and MEGAPLEX</li>
+                        <li>
+                            To request Movies and TV Shows
+                            <a target="_blank" href="http://192.168.100.100:5000/login">
+                                <b class="text-danger">click here</b>
+                            </a>
+                            , put
+                            <b class="text-primary">user</b>
+                            in username and click sign in.
+                        </li>
+                    </ol>
                 </div>
-                <div class="modal-footer justify-content-center">
-                    <a type="button" class="btn btn-danger waves-effect waves-light">Send
-                        <i class="fa fa-paper-plane ml-1"></i>
-                    </a>
-                    <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Cancel</a>
+                <div class="container">
+                    <div class="row text-center">
+                        <br>
+                        <p>
+                            <a href="https://apps.apple.com/us/app/plex-movies-tv-music-more/id383457673" target="_blank" class="btn btn-store">
+                                <span class="fab fa-apple fa-3x pull-left"></span>
+                                <span class="btn-label">Download on the</span>
+                                <span class="btn-caption">App Store</span>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en&gl=US" target="_blank" class="btn btn-store">
+                                <span class="fab fa-android fa-3x pull-left"></span>
+                                <span class="btn-label">Download on the</span>
+                                <span class="btn-caption">Play Store</span>
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <header class="masthead">
-        <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">welcome</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Morale network guidance and agreement</h2>
-                <a class="btn btn-danger js-scroll-trigger" href="#about">Get Started</a>
-            </div>
-        </div>
-    </header>
-    <section class="about-section text-center" id="about" style="padding-bottom: 10rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4">Morale-Net Services</h2>
-                    <p class="text-white-50">Unlimited base-wide WI-FI with
-                        <b class="text-primary">5mbps</b>download and upload. Movies & TV shows provided on PLEX server.
-                        </br>
-                        <b class="text-primary">Special Events; Baby births, funerals and remote proctored tests</b>
-                        </br>Following Activities are prohibited for a better experience.
-                    </p>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Prohibited</button>
-                        <div class="dropdown-menu">
-                            <!-- <a class="dropdown-item popoverData btn" href="#!"
-                                data-content="Transferring sensitive data such as banking and PII" rel="popover"
-                                data-placement="right" data-original-title="Except" data-trigger="hover">VPN</a> -->
-                            <!-- <a class="dropdown-item btn popoverData " href="#!"
-                                data-content="HBO Go, Hulu, Amazon Prime, Netflix, Live Sports Events" rel="popover"
-                                data-placement="right" data-original-title="Including but not limited to"
-                                data-trigger="hover">Subscription-based Streaming services</a> -->
-                            <!-- <a class="dropdown-item btn popoverData " href="#!"
-                                data-content="Twitch, Facebook.gg, Tiktok, Youtube, DailyMotion" rel="popover"
-                                data-placement="right" data-original-title="Except eudcational purposes"
-                                data-trigger="hover">Video Streaming services</a> -->
-                            <!-- <a class="dropdown-item popoverData btn" href="#!"
-                                data-content="PS, Nintendo, Xbox, Steam, etc." rel="popover" data-placement="right"
-                                data-original-title="Including but not limited to" data-trigger="hover">Online
-                                Gaming</a> -->
-                            <a class="dropdown-item popoverData btn" href="#!"
-                                data-content="Personal Device updates >1GB, Download large files >10GB to be approved on a per request basis"
-                                rel="popover" data-placement="right" data-original-title="Quota"
-                                data-trigger="hover">Large Downloads</a>
-                            <a class="dropdown-item popoverData btn" href="#!"
-                                data-content="Plugging any device directly into any 768 EABS COMM equipment, Removing cables from established equipment to plug in personal devices"
-                                rel="popover" data-placement="right" data-original-title="Malicious Actions"
-                                data-trigger="hover">Rougue Devices</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#!">Blackmarket sites</a>
-                            <a class="dropdown-item" href="#!">Torrent</a>
-                            <a class="dropdown-item" href="#!">Actions Deemed Illegal</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img class="img-fluid" src="assets/img/wifi.png" alt="">
-        </div>
-    </section>
-    <section class="projects-section bg-light" id="projects">
-        <div class="container">
-            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                <div class="col-xl-8 col-lg-7">
-                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/plex.png" alt="plex">
-                </div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Plex</h4>
-                        <p class="text-black-50 mb-0">Plex server is locally hosted library with movies and TV shows.
-                            Following exaplains how to log into the Plex.</p>
-                        <ol class="text-black-50 mb-0">
-                            <li>Open any browser, type www.plex.tv in the addres bar</li>
-                            <li>login in with Username
-                                <i class="text-primary">ab101.user</i>and password will be given by
-                                <i class="text-primary">COMM</i>
-                            </li>
-                            <li>Click the more tab, it will view SUPLEX and MEGAPLEX</li>
-                            <li>To request Movies and TV Shows
-                                <a target="_blank" href="http://192.168.100.100:5000/login">
-                                    <b class="text-danger">click here</b>
-                                </a>, put
-                                <b class="text-primary">user</b>in username and click sign in.
-                            </li>
-                        </ol>
-                    </div>
-                    <div class="container">
-                        <div class="row text-center">
-                            <br>
-                            <p>
-                                <a href="https://apps.apple.com/us/app/plex-movies-tv-music-more/id383457673"
-                                    target="_blank" class="btn btn-store">
-                                    <span class="fab fa-apple fa-3x pull-left"></span>
-                                    <span class="btn-label">Download on the</span>
-                                    <span class="btn-caption">App Store</span>
-                                </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en&gl=US"
-                                    target="_blank" class="btn btn-store">
-                                    <span class="fab fa-android fa-3x pull-left"></span>
-                                    <span class="btn-label">Download on the</span>
-                                    <span class="btn-caption">Play Store</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div style="padding-top: 4rem;" class="row justify-content-center no-gutters mb-5 mb-lg-0">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/warning.png" alt="warning">
-                <img class="img-fluid" src="assets/img/warning02.png" alt="warning">
-            </div>
-            <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                    <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Consequences</h4>
-                            <ul>
-                                <li class="mb-0 text-white-50">1
-                                    <sup>st</sup>offence: Automatic device ban for
-                                    <b class="text-warning">24 hours</b>
-                                </li>
-                                <li class="mb-0 text-white-50">2
-                                    <sup>nd</sup>offence: Auotmatic device ban until visit to CFP and complete
+</div>
+<div style="padding-top: 4rem;" class="row justify-content-center no-gutters mb-5 mb-lg-0">
+    <div class="col-lg-6">
+        <img class="img-fluid" src="assets/img/warning.png" alt="warning">
+        <img class="img-fluid" src="assets/img/warning02.png" alt="warning">
+    </div>
+    <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white">Consequences</h4>
+                    <ul>
+                        <li class="mb-0 text-white-50">
+                            1
+                            <sup>st</sup>
+                            offence: Automatic device ban for
+                            <b class="text-warning">24 hours</b>
+                        </li>
+                        <li class="mb-0 text-white-50">
+                            2
+                            <sup>nd</sup>
+                            offence: Auotmatic device ban until visit to CFP and complete
                                     papaerwork
-                                </li>
-                                <li class="mb-0 text-white-50">3
-                                    <sup>rd</sup>offence:
-                                    <b class="text-danger">Permanent device ban</b>
-                                </li>
-                            </ul>
-                            <h4 class="text-white">Violation</h4>
-                            <p class="mb-0 text-white-50">Violation of the agreement will result in blocked device. To
-                                reinstate your access, please submit a MFR to CFP containinnig following.</p>
-                            <ul>
-                                <li class="text-warning">Acknowledgement of MoraleNet User Agreement</li>
-                                <li class="text-warning">Statement of Understanding</li>
-                                <li class="text-warning">Signed Moralenet user Agreement</li>
-                            </ul>
-                            <hr class="d-none d-lg-block mb-0 ml-0">
+                        </li>
+                        <li class="mb-0 text-white-50">
+                            3
+                            <sup>rd</sup>
+                            offence:
+                            <b class="text-danger">Permanent device ban</b>
+                        </li>
+                    </ul>
+                    <h4 class="text-white">Violation</h4>
+                    <p class="mb-0 text-white-50">
+                        Violation of the agreement will result in blocked device. To
+                                reinstate your access, please submit a MFR to CFP containinnig following.
+                    </p>
+                    <ul>
+                        <li class="text-warning">Acknowledgement of MoraleNet User Agreement</li>
+                        <li class="text-warning">Statement of Understanding</li>
+                        <li class="text-warning">Signed Moralenet user Agreement</li>
+                    </ul>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center no-gutters">
+    <div class="col-lg-6">
+        <img class="img-fluid" src="assets/img/console.jpg" alt="Console">
+    </div>
+    <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                    <h4 class="text-white">Console updates</h4>
+                    <p class="mb-0 text-white-50">
+                        Please disable any automatic updates for console systems. An
+                                Access will be removed for a dvice, which triggers an excessive badwidth usage.
+                    </p>
+                    <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="team-section text-center bg-light" id="team" style="padding-top: 12rem; padding-bottom: 12rem;">
+    <p style="display: inline;" class="grey-text w-responsive mx-auto mb-5" id="quoteText"></p>
+    <p style="color: #DC143C;" class="grey-text w-responsive mx-auto mb-5" id="authorText"></p>
+    <button style="padding: 1% !important;" class="btn btn-danger" onclick="quoteAction()"><img height="60px" width="80px" src="assets/img/quote.png"> Get quote!</button>
+    <h2 class="h1-responsive font-weight-bold my-5">Our amazing team</h2>
+    <p class="grey-text w-responsive mx-auto mb-5">
+        Accurate Raptide Tute | 264
+        <sup>th</sup>
+        Combat COMM Squadron
+    </p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/venom.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
                         </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">MSgt Hardy</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>Superintedent</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/redskull.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">Capt Shin</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>CC</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/killmonger.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">MSgt English</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOO | NCOIC</strong>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/loki.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">SrA Williamson</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOI</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/taskmaster.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">TSgt Day</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOT | NCOIC</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/thanos.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">SSgt Martinez</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOS | NCOIC</strong>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/mysterio.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">SrA Pampinella</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOS</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/bullseye.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">SSgt Schrader</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOT</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/yjacket.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">TSgt Picken</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOO</strong>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/ego.png" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">TSgt Ratliff</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>WX | NCOIC</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/aegis.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">Amn Oesch</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOI</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/juggernaut.png" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">SrA Ajmeri</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>SCOI</strong>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/docock.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">SrA Scheetz</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>WX</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/carnage.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text my-4">A1C EL-Nazly</h4>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>WX</strong>
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <div class="avatar mx-auto">
+                            <img src="assets/img/ddoom.jpg" class="rounded z-depth-1-half teamavatar" alt="Sample avatar">
+                        </div>
+                        <h5 class="font-weight-bold dark-grey-text my-4">TSgt Warren</h5>
+                        <h6 class="text-uppercase grey-text mb-3">
+                            <strong>CE</strong>
+                        </h6>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center no-gutters">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/console.jpg" alt="Console">
-            </div>
-            <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                    <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Console updates</h4>
-                            <p class="mb-0 text-white-50">Please disable any automatic updates for console systems. An
-                                Access will be removed for a dvice, which triggers an excessive badwidth usage.</p>
-                            <hr class="d-none d-lg-block mb-0 mr-0">
-                        </div>
-                    </div>
-                </div>
+        <a
+            class="carousel-control-prev"
+            style="top:0;"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<section class="signup-section" id="signup" style="padding-top: 9rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">
+                    For Speacial requests contact
+                    <b class="text-danger">COMM!</b>
+                </h2>
             </div>
         </div>
-    </section>
-    <section class="team-section text-center bg-light" id="team" style="padding-top: 15rem; padding-bottom: 12rem;">
-        <h2 class="h1-responsive font-weight-bold my-5">Our amazing team</h2>
-        <p class="grey-text w-responsive mx-auto mb-5">Accurate Raptide Tute | 264
-            <sup>th</sup>Combat COMM Squadron
-        </p>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/venom.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">MSgt Hardy</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>Superintedent</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/redskull.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">Capt Shin</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>CC</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/killmonger.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">MSgt English</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOO | NCOIC</strong>
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/loki.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">SrA Williamson</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOI</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/taskmaster.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">TSgt Day</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOT | NCOIC</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/thanos.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">SSgt Martinez</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOS | NCOIC</strong>
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/mysterio.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">SrA Pampinella</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOS</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/bullseye.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">SSgt Schrader</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOT</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/yjacket.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">TSgt Picken</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOO</strong>
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/ego.png" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">TSgt Ratliff</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>WX | NCOIC</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/aegis.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">Amn Oesch</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOI</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/juggernaut.png" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">SrA Ajmeri</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>SCOI</strong>
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/docock.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">SrA Scheetz</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>WX</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/carnage.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h4 class="font-weight-bold dark-grey-text my-4">A1C EL-Nazly</h4>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>WX</strong>
-                            </h6>
-                        </div>
-                        <div class="col">
-                            <div class="avatar mx-auto">
-                                <img src="assets/img/ddoom.jpg" class="rounded z-depth-1-half teamavatar"
-                                    alt="Sample avatar">
-                            </div>
-                            <h5 class="font-weight-bold dark-grey-text my-4">TSgt Warren</h5>
-                            <h6 class="text-uppercase grey-text mb-3">
-                                <strong>CE</strong>
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" style="top:0;" href="#carouselExampleIndicators" role="button"
-                data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+        <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="faq.html">
+                <img width="150" src="assets/img/faq.png">
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-    </section>
-    <section class="signup-section" id="signup" style="padding-top: 9rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto text-center">
-                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">For Speacial requests contact
-                        <b class="text-danger">COMM!</b>
-                    </h2>
-                </div>
-            </div>
-            <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="faq.html">
-                    <img width="150" src="assets/img/faq.png">
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="contact-section bg-black">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">AB101 | OPS | Niamey</div>
-                        </div>
+    </div>
+</section>
+<section class="contact-section bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Address</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">AB101 | OPS | Niamey</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">
-                                <a href="#!">CFP Org Box</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">+1 (401) 571-1000</div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">
+                            <a href="#!">CFP Org Box</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">+1 (401) 571-1000</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container">Copyright © AB101 2021</div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        //popover
-        $('.popoverData').popover();
-        $('.popoverOption').popover({ trigger: "hover" });
-    </script>
-    <style>
+    </div>
+</section>
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container">Copyright © AB101 2021</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    //popover
+    $('.popoverData').popover();
+    $('.popoverOption').popover({ trigger: "hover" });
+
+
+    //quote
+    const quoteAction = async () => {
+        const response = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes');
+        const myJson = await response.json(); //extract JSON from the http response
+        //append the quote
+        let element = document.getElementById("quoteText");
+        let element1 = document.getElementById('authorText');
+        element.innerHTML = '"'+myJson[0]['quote']+'"'
+        element1.innerHTML = myJson[0]['author'];
+    }
+</script>
+<style>
         .teamavatar {
             width: 20rem;
             height: 16.8rem
@@ -573,7 +672,6 @@
             position: absolute;
             left: 1rem
         }
-    </style>
+</style>
 </body>
-
 </html>
